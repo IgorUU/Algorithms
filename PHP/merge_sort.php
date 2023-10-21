@@ -63,7 +63,7 @@ function mergeSort(&$arr, $l, $r)
 
         // Sort first and second halves
         mergeSort($arr, $l, $m);
-        // This function changes the focus to the right array and calls the method from above.
+        // This function changes the focus to the right array and calls the function from above.
         mergeSort($arr, $m + 1, $r);
 
         merge($arr, $l, $m, $r);
